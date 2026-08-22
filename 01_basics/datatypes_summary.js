@@ -31,4 +31,31 @@ const myfunction = function() // function ko js me as a variable bhi declare kar
 
 console.log(typeof bigNumber);
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+
+// Stack (Primitive), Heap  (Non- Primitive) // stack memory call me variable ki copy milti hai jisco declare kiya ho
+// Heap se original value ka reference milta hai
+
+let myYoutubename = "Hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
 
